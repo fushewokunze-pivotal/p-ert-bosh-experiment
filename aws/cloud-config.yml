@@ -96,7 +96,7 @@ networks:
     static:
     - 10.0.6.190-10.0.6.254   
     cloud_properties:
-      subnet: subnet-08375d6
+      subnet: subnet-08375d6c
   - az: z2
     gateway: ((z2_gateway))
     range: ((z2_cidr))
