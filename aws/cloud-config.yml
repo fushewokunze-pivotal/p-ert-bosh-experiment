@@ -7,7 +7,7 @@ azs:
     availability_zone: ((z2))
 - name: z3
   cloud_properties:
-    availability_zone: ((z3))
+    availability_zone: z3
 
 vm_types:
 - name: m3.medium
