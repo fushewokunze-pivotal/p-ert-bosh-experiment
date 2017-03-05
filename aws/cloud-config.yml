@@ -123,11 +123,16 @@ vm_extensions:
       size: 102400
       type: gp2
 
-- name: cf-internet-required
-  cloud_properties: {}
+- name: internet-required
+  cloud_properties:
+    ephemeral_external_ip: true
 
+- name: cf-internet-required
+  cloud_properties:
+    ephemeral_external_ip: true
 - name: cf-internet-not-required
-  cloud_properties: {}
+  cloud_properties:
+    ephemeral_external_ip: false
 
 - name: router-lb
   cloud_properties:
