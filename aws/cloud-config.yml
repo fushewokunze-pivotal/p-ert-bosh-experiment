@@ -5,9 +5,9 @@ azs:
 - name: z2
   cloud_properties:
     availability_zone: ((z2))
-- name: z3
-  cloud_properties:
-    availability_zone: ((z3))
+#- name: z3
+#  cloud_properties:
+#    availability_zone: ((z3))
 
 vm_types:
 - name: m3.medium
@@ -94,13 +94,13 @@ networks:
     static: ((z2_static_ips))    
     cloud_properties:
       subnet: ((z2_subnet_id))
-  - az: z3
-    gateway: ((z3_gateway))
-    range: ((z3_cidr))
-    reserved: ((z3_reserved_ips))
-    static: ((z3_static_ips))    
-    cloud_properties:
-      subnet: ((z3_subnet_id))
+#  - az: z3
+#    gateway: ((z3_gateway))
+#    range: ((z3_cidr))
+#    reserved: ((z3_reserved_ips))
+#    static: ((z3_static_ips))    
+#    cloud_properties:
+#      subnet: ((z3_subnet_id))
 vm_extensions:
 - name: 5GB_ephemeral_disk
   cloud_properties:
