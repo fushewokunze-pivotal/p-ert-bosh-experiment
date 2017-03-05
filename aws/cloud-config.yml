@@ -88,12 +88,16 @@ networks:
     cloud_properties:
       subnet: ((z1_subnet_id))
   - az: z2
-    gateway: ((z2_gateway))
-    range: ((z2_cidr))
-    reserved: ((z2_reserved_ips))
-    static: ((z2_static_ips))    
+    gateway: 10.0.6.1
+    range: 10.0.6.0/24
+    reserved:
+    - 10.0.6.0-10.0.6.3
+    - 10.0.6.255
+    static:
+    - 10.0.6.190-10.0.6.254   
     cloud_properties:
-      subnet: ((z2_subnet_id))
+      subnet: subnet-08375d6
+      
 #  - az: z3
 #    gateway: ((z3_gateway))
 #    range: ((z3_cidr))
