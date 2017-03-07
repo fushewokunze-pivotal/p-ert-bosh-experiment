@@ -145,3 +145,8 @@ vm_extensions:
     elbs:
     - ((ssh_proxy_lb))
     security_groups: ((ssh_proxy_lb_security_groups))
+    
+- name: cf-tcp-router-network-properties
+  cloud_properties:
+    ports:
+    - host: 1024-1123  
