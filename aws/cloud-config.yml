@@ -134,6 +134,10 @@ vm_extensions:
 - name: cf-internet-not-required
   cloud_properties: 
     ephemeral_external_ip: false
+    
+- name: internet-required
+  cloud_properties:
+    ephemeral_external_ip: true    
 
 - name: router-lb
   cloud_properties:
