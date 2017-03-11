@@ -2,8 +2,8 @@
   path: '/instance_groups/name=blobstore'
 - type: remove
   path: '/variables/name=blobstore_tls'
-- type: remove
-  path: '/variables/name=blobstore_ca'
+#- type: remove
+#  path: '/variables/name=blobstore_ca'
 - type: remove
   path: '/variables/name=blobstore_secure_link_secret'
 - type: remove
