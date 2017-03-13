@@ -16,30 +16,35 @@ vm_types:
     ephemeral_disk:
       size: 1024
       type: gp2
+      encrypted: true
 - name: m3.large
   cloud_properties:
     instance_type: m3.large
     ephemeral_disk:
       size: 1024
       type: gp2
+      encrypted: true
 - name: c3.large
   cloud_properties:
     instance_type: c3.large
     ephemeral_disk:
       size: 1024
       type: gp2
+      encrypted: true
 - name: r3.xlarge
   cloud_properties:
     instance_type: r3.xlarge
     ephemeral_disk:
       size: 1024
       type: gp2
+      encrypted: true
 - name: t2.small
   cloud_properties:
     instance_type: t2.small
     ephemeral_disk:
       size: 1024
       type: gp2
+      encrypted: true
 
 disk_types:
 - name: 1GB
@@ -111,21 +116,25 @@ vm_extensions:
     ephemeral_disk:
       size: 5120
       type: gp2
+      encrypted: true
 - name: 10GB_ephemeral_disk
   cloud_properties:
     ephemeral_disk:
       size: 10240
       type: gp2
+      encrypted: true
 - name: 50GB_ephemeral_disk
   cloud_properties:
     ephemeral_disk:
       size: 51200
       type: gp2
+      encrypted: true
 - name: 100GB_ephemeral_disk
   cloud_properties:
     ephemeral_disk:
       size: 102400
       type: gp2
+      encrypted: true
 
 - name: cf-internet-required
   cloud_properties:
