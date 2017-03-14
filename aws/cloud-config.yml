@@ -8,6 +8,9 @@ azs:
 - name: z3
   cloud_properties:
     availability_zone: us-west-1a
+- name: services
+  cloud_properties:
+    availability_zone: us-west-1c
 
 vm_types:
 - name: m3.medium
@@ -109,7 +112,19 @@ networks:
     static: ((z2_static_ips))    
     cloud_properties:
       subnet: ((z2_subnet_id))
-      
+  
+  
+  - az: services
+    gateway: 10.0.16.1
+    range: 10.0.16.0/24
+    reserved:
+    - 10.0.16.0-10.0.16.3
+    - 10.0.16.255
+    static:
+    - 10.0.16.190-10.0.16.254   
+    cloud_properties:
+      subnet: subnet-e6e08182
+ 
 vm_extensions:
 - name: 5GB_ephemeral_disk
   cloud_properties:
