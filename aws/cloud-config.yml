@@ -115,15 +115,15 @@ networks:
   
   
   - az: services
-    gateway: 10.0.16.1
-    range: 10.0.16.0/24
+    gateway: 10.0.7.1
+    range: 10.0.7.0/24
     reserved:
-    - 10.0.16.0-10.0.16.3
-    - 10.0.16.255
+    - 10.0.7.0-10.0.7.3
+    - 10.0.7.255
     static:
-    - 10.0.16.190-10.0.16.254   
+    - 10.0.7.190-10.0.7.254   
     cloud_properties:
-      subnet: subnet-e6e08182
+      subnet: subnet-3c5f2e58
  
 vm_extensions:
 - name: 5GB_ephemeral_disk
