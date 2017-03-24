@@ -112,8 +112,6 @@ networks:
     static: ((z2_static_ips))    
     cloud_properties:
       subnet: ((z2_subnet_id))
-  
-  
   - az: services
     gateway: 10.0.7.1
     range: 10.0.7.0/24
@@ -124,7 +122,36 @@ networks:
     - 10.0.7.190-10.0.7.254   
     cloud_properties:
       subnet: subnet-3c5f2e58
- 
+
+- name: public
+  type: manual
+  subnets:
+  - az: z1
+    gateway: 10.0.0.1
+    range: 10.0.0.1/24
+    reserved: 
+    - 10.0.0.0-10.0.0.20
+    - 10.0.0.255
+    static: 
+    - 10.0.0.190-10.0.0.254 
+    cloud_properties:
+      subnet: subnet-8bb7dcef
+
+  - az: z2
+    gateway: 10.0.1.1
+    range: 10.0.1.1/24
+    reserved: 
+    - 10.0.1.0-10.0.1.20
+    - 10.0.1.255
+    static: 
+    - 10.0.1.190-10.0.1.254 
+    cloud_properties:
+      subnet: subnet-d8358e80     
+
+- name: vip
+  type: vip
+
+
 vm_extensions:
 - name: 5GB_ephemeral_disk
   cloud_properties:
@@ -178,3 +205,11 @@ vm_extensions:
   cloud_properties:
     ports:
     - host: 1024-1123  
+
+- name: ha_proxy
+  cloud_properties:
+    security_groups: 
+    - web
+    - bosh_security_group
+    
+    
