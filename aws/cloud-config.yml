@@ -127,26 +127,26 @@ networks:
   type: manual
   subnets:
   - az: z1
-    gateway: 10.0.0.1
-    range: 10.0.0.1/24
+    gateway: 172.31.16.1
+    range: 172.31.16.1/24
     reserved: 
-    - 10.0.0.0-10.0.0.20
-    - 10.0.0.255
+    - 172.31.16.0-172.31.16.20
+    - 172.31.16.255
     static: 
-    - 10.0.0.190-10.0.0.254 
+    - 172.31.16.190-172.31.16.254 
     cloud_properties:
-      subnet: subnet-8bb7dcef
+      subnet: subnet-6f43d90b
 
   - az: z2
-    gateway: 10.0.1.1
-    range: 10.0.1.1/24
+    gateway: 172.31.0.1
+    range: 172.31.0.1/24
     reserved: 
-    - 10.0.1.0-10.0.1.20
-    - 10.0.1.255
+    - 172.31.0.0-172.31.0.20
+    - 172.31.0.255
     static: 
-    - 10.0.1.190-10.0.1.254 
+    - 172.31.0.190-172.31.0.254 
     cloud_properties:
-      subnet: subnet-d8358e80     
+      subnet: subnet-d60da68e     
 
 - name: vip
   type: vip
