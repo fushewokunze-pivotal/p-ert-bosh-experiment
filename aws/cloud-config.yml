@@ -104,7 +104,7 @@ networks:
     static:
     - 10.0.6.190-10.0.6.254   
     cloud_properties:
-      subnet: subnet-08375d6c
+      subnet: subnet-348f056c
   - az: z2
     gateway: ((z2_gateway))
     range: ((z2_cidr))
@@ -121,7 +121,7 @@ networks:
     static:
     - 10.0.7.190-10.0.7.254   
     cloud_properties:
-      subnet: subnet-3c5f2e58
+      subnet: subnet-368f056e
 
 - name: public
   type: manual
@@ -135,7 +135,7 @@ networks:
     static: 
     - 10.0.8.190-10.0.8.254 
     cloud_properties:
-      subnet: subnet-d0e19eb4
+      subnet: subnet-ce890396
 
   - az: z2
     gateway: 10.0.9.1
@@ -146,7 +146,7 @@ networks:
     static: 
     - 10.0.9.190-10.0.9.254 
     cloud_properties:
-      subnet: subnet-cf25ab97     
+      subnet: subnet-3e38435a     
 
 - name: vip
   type: vip
