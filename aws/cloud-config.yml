@@ -10,7 +10,7 @@ azs:
     availability_zone: us-west-1c
 - name: services
   cloud_properties:
-    availability_zone: us-west-1a
+    availability_zone: us-west-1c
 
 vm_types:
 - name: m3.medium
