@@ -35,7 +35,7 @@ vm_types:
       type: gp2
       encrypted: true
 - name: r3.xlarge
-  cloud_properties:
+  cloud_properties: 
     instance_type: r3.xlarge
     ephemeral_disk:
       size: 1024
