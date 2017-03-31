@@ -135,7 +135,7 @@ networks:
     static: 
     - 10.0.8.190-10.0.8.254 
     cloud_properties:
-      subnet: subnet-ce890396
+      subnet: subnet-4e2c572a
 
   - az: z2
     gateway: 10.0.9.1
